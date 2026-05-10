@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>*** NOTICIAS & DATOS - PORTAL RETRO ***</title>
+    <style>
+        body {
+            background-color: #c0c0c0; 
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+        }
+
+        /* --- CABECERA --- */
+        .header-retro {
+            background-color: #000080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 3px ridge #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .titulo-principal {
+            font-size: 40pt;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stars-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150%;
+            z-index: 1;
+            mix-blend-mode: multiply;
+        }
+
+        /* --- CONTENIDO --- */
+        .main-table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        .ventana {
+            background-color: #ffffff;
+            border: 2px outset #ffffff;
+            box-shadow: 2px 2px 0px #000;
+            padding: 15px;
+            vertical-align: top;
+        }
+
+        .barra-titulo {
+            background: linear-gradient(90deg, #000080, #1084d0);
+            color: white;
+            font-weight: bold;
+            padding: 2px 5px;
+            font-size: 12px;
+            margin: -15px -15px 15px -15px;
+        }
+
+        /* --- FOOTER --- */
+        .footer-canal {
+            text-align: center;
+            padding: 40px 10px;
+            border-top: 2px groove #fff;
+            margin-top: 30px;
+        }
+
+        .texto-info {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000080;
+            margin-bottom: 20px;
+            font-family: "Comic Sans MS", cursive;
+        }
+
+        .gif-boton-gigante {
+            width: 550px; /* Tamaño grande solicitado */
+            mix-blend-mode: multiply;
+            cursor: pointer;
+            border: none;
+        }
+
+        #preloader {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: #fff;
+            display: flex; justify-content: center; align-items: center;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="preloader">
+        <img src="gifcarga.gif" width="100">
+    </div>
+
+    <div class="header-retro">
+        <div class="header-container">
+            <h1 class="titulo-principal">NOTICIAS & DATOS</h1>
+            <img src="starsgif.gif" class="stars-overlay">
+        </div>
+    </div>
+
+    <table class="main-table">
+        <tr>
+            <td class="ventana" width="70%">
+                <div class="barra-titulo">Noticias.txt</div>
+                <h2>Bienvenido a mi sitio</h2>
+                <p>Usa este espacio para tus artículos. Para cambiar la imagen de abajo, solo sube tu foto a GitHub y cambia el nombre en el src.</p>
+                <center>
+                    <img src="https://picsum.photos/400/200" border="2">
+                </center>
+            </td>
+            <td width="5%"></td>
+            <td class="ventana">
+                <div class="barra-titulo">Stats.exe</div>
+                <p><b>Visitantes totales:</b></p>
+                <img src="https://counter.secrethell.site/counter/count.svg?id=elomegapro300-web&theme=pixel&digits=6" 
+                     alt="Contador" 
+                     style="background: #000; padding: 5px; border: 2px inset #808080;">
+                <p>Optimizado para 800x600.</p>
+            </td>
+        </tr>
+    </table>
+
+    <div class="footer-canal">
+        <p class="texto-info">
+            si quieres mas informacion como esta,o quieres ver algunos tutoriales que te sirvan,mira mi canal!
+        </p>
+        <a href="https://www.youtube.com/@elomegapro300-wy5ju" target="_blank">
+            <img src="gifbutton.gif" class="gif-boton-gigante">
+        </a>
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById('preloader').style.display = 'none';
+            }, 800);
+        };
+    </script>
+</body>
+</html>
