@@ -56,6 +56,7 @@
             box-shadow: 2px 2px 0px #000;
             padding: 15px;
             vertical-align: top;
+            margin-bottom: 20px; /* Espacio entre noticias */
         }
 
         .barra-titulo {
@@ -84,7 +85,7 @@
         }
 
         .gif-boton-gigante {
-            width: 550px; /* Tamaño grande solicitado */
+            width: 550px;
             mix-blend-mode: multiply;
             cursor: pointer;
             border: none;
@@ -114,21 +115,29 @@
 
     <table class="main-table">
         <tr>
-            <td class="ventana" width="70%">
-                <div class="barra-titulo">Noticias.txt</div>
-                <h2>Bienvenido a mi sitio</h2>
-                <p>Usa este espacio para tus artículos. Para cambiar la imagen de abajo, solo sube tu foto a GitHub y cambia el nombre en el src.</p>
-                <center>
-                    <img src="https://picsum.photos/400/200" border="2">
-                </center>
-            </td>
+            <td width="70%" id="contenedor-noticias" style="vertical-align: top;">
+                
+                <div class="ventana">
+                    <div class="barra-titulo">Noticia_Reciente.txt</div>
+                    <h2>¡Bienvenidos a mi sitio oficial!</h2>
+                    <p>Esta es la primera sección de noticias. Aquí puedes escribir lo que quieras.</p>
+                    <center>
+                        <img src="https://picsum.photos/400/200" border="2">
+                    </center>
+                </div>
+                </td>
+
             <td width="5%"></td>
-            <td class="ventana">
-                <div class="barra-titulo">Stats.exe</div>
-                <p><b>Visitantes totales:</b></p>
-                <img src="https://counter.secrethell.site/counter/count.svg?id=elomegapro300-web&theme=pixel&digits=6" 
-                     alt="Contador" 
-                     style="background: #000; padding: 5px; border: 2px inset #808080;">
+
+            <td class="ventana" width="25%">
+                <div class="barra-titulo">Menu.sys</div>
+                <p><b>Secciones:</b></p>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Tutoriales</a></li>
+                    <li><a href="#">Sobre mí</a></li>
+                </ul>
+                <hr>
                 <p>Optimizado para 800x600.</p>
             </td>
         </tr>
